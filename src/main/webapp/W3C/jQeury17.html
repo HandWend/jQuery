@@ -25,6 +25,9 @@
 <!-- jQuery -->
 <script type="text/javascript">
 $(document).ready(function () {
+	
+	$("#sel option:eq(1)").prop("selected", true);
+	
 	$("#sel").change(function () {
 		$("#subsel").empty();
 		
