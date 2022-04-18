@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 스크립트(1)  -->
+<!-- <script type="text/javascript" src="jquery-3.6.0.min.js"></script>, donwload 해서 사용하는 방법 -->
+<!-- 웹 서버에서 가져오는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" id="txt">
+<button id="submit">값 체크</button>
+<!-- 스크립트(2) -->
+<!-- jQuery -->
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#submit").click(function () {
+		//var txt = $("#txt").val();
+		//var txt = document.getElementById("txt").value;
+		var txt = document.getElementById("txt");
+		if ($(txt).val() =='') {
+			console.log("빈값입니다");
+		} else {
+		console.log("value: " + $(txt).val());
+		}
+	});
+});
+</script>
+</body>
+</html>
