@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>syntax</title>
+<!-- 스크립트(1)  -->
+<!-- <script type="text/javascript" src="jquery-3.6.0.min.js"></script>, donwload 해서 사용하는 방법 -->
+<!-- 웹 서버에서 가져오는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<p>코로나 조심</p>
+<p class="p">머리가 아파요</p>
+<p id="p">가슴도 답답해요</p>
+<!-- 스크립트(2) -->
+<!-- jQuery -->
+<script type="text/javascript">
+$(document).ready(function () {
+	/* 감추는 것: hide();, 보여주는 것: show(); */
+	$("p").hide(3000), function () {
+		alert("^^");
+	};
+});
+</script>
+</body>
+</html>

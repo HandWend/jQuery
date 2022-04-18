@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>event</title>
+<!-- 스크립트(1)  -->
+<!-- <script type="text/javascript" src="jquery-3.6.0.min.js"></script>, donwload 해서 사용하는 방법 -->
+<!-- 웹 서버에서 가져오는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<p>코로나 조심</p>
+<p class="p">머리가 아파요</p>
+<p id="p">가슴도 답답해요</p>
+<!-- 스크립트(2) -->
+<!-- jQuery -->
+<script type="text/javascript">
+$(document).ready(function () {
+	$("p").dblclick(function () {
+		// 천천히 사라지게 하기
+		$(this).hide(1000);
+	})
+	
+	// mouseenter: 마우스가 올라갔을 때, mousedown: 우클릭, 좌클릭, 휠클릭
+	$("#p").mousedown(function () {
+		alert('클릭되었어요');
+	});
+});
+
+</script>
+</body>
+</html>
